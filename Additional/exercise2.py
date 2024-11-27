@@ -12,10 +12,10 @@ def get_number():
 def get_operator():
     operator = None
     while True:
-        operator = input("Operator: ")
+        operator = input("Operator: ").lower()
         if operator in ['+', '-', '/', '*']:
             break
-        elif operator.lower() == 'q':
+        elif operator == 'q':
             exit()
     return operator
 
